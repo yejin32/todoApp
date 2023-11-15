@@ -5,16 +5,17 @@ import Input from "../components/Input";
 import List from "../components/List";
 
 const MainPage = () => {
-  const MainForm = styled.div`
+  const SMainForm = styled.div`
     width: 100%;
+    height: 100vh;
     min-height: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     background-color: #3578e5;
-    color: #e4e7ee;
+    color: #ffffff;
   `;
 
-  const TodoForm = styled.div`
+  const STodoForm = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,13 +23,13 @@ const MainPage = () => {
   `;
 
   return (
-    <MainForm>
-      <TodoForm>
+    <SMainForm>
+      <STodoForm>
         <Title />
         <Input />
         <List />
-      </TodoForm>
-    </MainForm>
+      </STodoForm>
+    </SMainForm>
   );
 };
 
